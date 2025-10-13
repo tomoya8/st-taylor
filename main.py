@@ -60,8 +60,6 @@ def main():
     else:
         st.latex('テイラー展開: \\bar{f}(x)=' + latex(taylor))
 
-
-
     p = plot((expr, "$"+latex(expr)+"$"), (taylor.removeO(), "Taylor"), (x, -10, 10), ylim=(-10, 10), show=False)
     st.pyplot(p.fig)
 
