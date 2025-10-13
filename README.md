@@ -15,6 +15,7 @@ Enable the necessary Apache modules for reverse proxying:
 ```
 
 Add the following configuration to your Apache virtual host file:
+[Reddit Reference](https://www.reddit.com/r/StreamlitOfficial/comments/1ixw4lc/white_page_streamlit_behind_reverse_proxy/)
 ```
 <VirtualHost *:443>
 ...
@@ -38,3 +39,4 @@ it is recommended to set the `STREAMLIT_SERVER_ENABLE_CORS` environment variable
 export STREAMLIT_SERVER_ENABLE_CORS=false
 streamlit run app.py
 ```
+
