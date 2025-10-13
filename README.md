@@ -6,7 +6,7 @@ This is a Streamlit application that visualizes the approximation of functions u
 
 テイラー展開による関数の近似を可視化するためのStreamlitアプリケーションです。
 
-# To setup behind reverse proxy
+## To setup behind reverse proxy
 
 Enable the necessary Apache modules for reverse proxying:
 ```bash
