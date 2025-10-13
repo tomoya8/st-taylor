@@ -38,13 +38,12 @@ def main():
     unsafe_allow_html=True
     )
 
-
     st.title("テイラー展開の可視化")
 
     fx = st.sidebar.text_input("関数 $f(x) = $", "x * cos(x)")
-    a = st.sidebar.number_input("展開中心 $a$ = ", value=0.0, step=0.1)
     #w = st.sidebar.number_input("描画範囲 x ∈ [-w, w] の w = ", min_value=0.1, max_value=10.0, value=2.0, step=0.1)
     n = st.sidebar.number_input("テイラー展開の次数 $n = $", min_value=1, max_value=20, value=5, step=1)
+    a = st.sidebar.number_input("展開中心 $a$ = ", value=0.0, step=0.1)
     if a != 0:
         st.sidebar.warning('展開中心が$a\\ne0$の場合、展開が正しくおこなわれない場合があります。', icon="⚠️")
 
