@@ -15,7 +15,9 @@ Enable the necessary Apache modules for reverse proxying:
 ```
 
 Add the following configuration to your Apache virtual host file:
+
 [Reddit Reference](https://www.reddit.com/r/StreamlitOfficial/comments/1ixw4lc/white_page_streamlit_behind_reverse_proxy/)
+
 ```
 <VirtualHost *:443>
 ...
