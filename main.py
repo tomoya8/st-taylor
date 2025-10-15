@@ -50,7 +50,14 @@ def main():
     else:
         st.write("テイラー展開: $\\displaystyle\\bar{f}(x)=" + sp.latex(taylor) + "$")
 
-    p = plot((expr, "$" + latex(expr) + "$"), (taylor.removeO(), "Taylor"), (x, -10, 10), ylim=(-10, 10), show=False)
+    p = plot(
+        (expr, f"${sp.latex(expr)}$"),
+        (taylor.removeO(), "Taylor"),
+        (x, -10, 10),
+        markers=[{'args': [a, expr.subs({x: a}), 'ro'], 'ms': 5}],
+        ylim=(-10, 10),
+        show=False
+    )
     st.pyplot(p.fig)
 
 
